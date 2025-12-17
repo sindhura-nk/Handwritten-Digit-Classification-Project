@@ -11,7 +11,7 @@ A machine learning project that classifies handwritten digits (0–9) using the 
 ## ✨ Features
 
 - Load and preprocess the MNIST dataset
-- Train a neural network (CNN or MLP) from scratch
+- Train a neural network (CNN) from scratch
 - Evaluate model performance (accuracy, confusion matrix, classification report)
 - Visualize training history and sample predictions
 - Save/load trained models for inference
