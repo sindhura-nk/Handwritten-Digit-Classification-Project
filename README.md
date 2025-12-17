@@ -6,7 +6,7 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 ![License](https://img.shields.io/badge/License-APACHE-green)
 
-A Deep learning project that classifies handwritten digits (0–9) using the classic **MNIST dataset**. Built with Python and deep learning frameworks, this project demonstrates end-to-end model development—from data loading to prediction visualization. You can find the deployed app ![here](https://handwritten-digit-classification-project-sindhura-nk.streamlit.app/) 
+A Deep learning project that classifies handwritten digits (0–9) using the classic **MNIST dataset**. Built with Python and deep learning frameworks, this project demonstrates end-to-end model development—from data loading to prediction visualization. You can find the deployed app [here](https://handwritten-digit-classification-project-sindhura-nk.streamlit.app/) 
 
 ## ✨ Features
 
