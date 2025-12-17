@@ -21,17 +21,13 @@ def preprocess_image(uploaded_file):
     """
     Converts Streamlit uploaded file to model-ready ndarray
     """
-    # Read image using PIL
-    image = Image.open(uploaded_file)
-
-    # Convert to grayscale
-    image = image.convert("L")
-
-    # Convert PIL image to NumPy array
-    img = np.array(image)
+    # Read image in Gray scale format using PIL 
+    image = Image.open(uploaded_file).convert("L")
 
     # Resize to 28x28
-    img = cv2.resize(img, (28, 28))
+    img = image.resize((28, 28))
+     # Convert PIL image to NumPy array
+    img = np.array(image)
 
     # Background check & invert if required
     if np.mean(img) > 127:
@@ -51,7 +47,7 @@ def preprocess_image(uploaded_file):
 submit = st.button('Predict the results here')
 
 # Load the keras model files: model
-model = load_model(r'/workspaces/Handwritten-Digit-Classification-Project/DigitsPrediction.keras')
+model = load_model(r'DigitsPrediction.keras')
 
 # What should happen when user clicks on submit button
 if submit:
@@ -61,6 +57,7 @@ if submit:
         preds = model.predict(img_array)
         final_pred = np.argmax(preds, axis=1)
 
-        st.success(f"✅ Predicted Digit: **{final_pred[0]}**")
+        st.image(upload_image,width=200)
+        st.subheader(f"✅ Predicted Digit: **{final_pred[0]}**")
 else:
     st.warning("⚠️ Please upload an image first.")
