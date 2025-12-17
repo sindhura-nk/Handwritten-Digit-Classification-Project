@@ -8,11 +8,6 @@
 
 A machine learning project that classifies handwritten digits (0–9) using the classic **MNIST dataset**. Built with Python and deep learning frameworks, this project demonstrates end-to-end model development—from data loading to prediction visualization.
 
-## 📸 Preview
-
-![Sample Predictions](assets/sample_predictions.png)  
-*(Example model predictions on MNIST test images)*
-
 ## ✨ Features
 
 - Load and preprocess the MNIST dataset
@@ -27,5 +22,3 @@ A machine learning project that classifies handwritten digits (0–9) using the 
 - **TensorFlow / Keras** 
 - **NumPy**, **Matplotlib**, **Pandas**
 - **Google Colab**
-
-## 📂 Project Structure
